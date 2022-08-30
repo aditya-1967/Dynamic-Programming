@@ -4,7 +4,7 @@
 mat = [[0] * 2 for i in range(2)]
 m, n = len(mat), len(mat[0])
 
-dp = [[-1] * m for i in range(n)]
+dp = [[-1] * (n+1) for i in range(m+1)]
 
 def unique_paths(i, j):
     if i == 0 and j == 0:
